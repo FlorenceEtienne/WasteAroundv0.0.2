@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Waste Around v0.0.2.sln"
+    "dotnet.defaultSolution": "WasteAroundv0.0.2.sln"
 }
