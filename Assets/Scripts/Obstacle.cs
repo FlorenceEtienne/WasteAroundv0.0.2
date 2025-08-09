@@ -24,25 +24,12 @@ public class Obstacle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player hit an obstacle!");
+            
             // // Find LevelOneInfo and increment MaterialsCollected
             LevelOneInfo levelOneInfo = FindObjectOfType<LevelOneInfo>();
-            // if (levelOneInfo != null)
-            // {
-            //     levelOneInfo.MaterialsCollected++;
-            // }
 
-            // LevelTwoInfo levelTwoInfo = FindObjectOfType<LevelTwoInfo>();
-            // if (levelTwoInfo != null)
-            // {
-            //     levelTwoInfo.MaterialsCollected++;
-            // }
-            // LevelThreeInfo levelThreeInfo = FindObjectOfType<LevelThreeInfo>();
-
-            // if (levelThreeInfo != null)
-            // {
-            //     levelThreeInfo.MaterialsCollected++;
-            // }
             levelOneInfo.MaterialsCollected++;
+
             // Destroy the obstacle
             Destroy(gameObject);
         }
