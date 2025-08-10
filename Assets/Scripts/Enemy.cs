@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float moveSpeed = 0.5f; // Speed at which the enemy moves downwards
+
     GameObject restartButton;
+
+    public float moveEnemy = 0.5f; // Speed at which the enemy moves
 
     void Start()
     {
@@ -14,7 +16,6 @@ public class Enemy : MonoBehaviour
         {
             restartButton.SetActive(false); // Ensure the restart button is hidden at the start
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

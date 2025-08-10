@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameManagement
   - EndLine
+  - Ground
   layers:
   - Default
   - TransparentFX
