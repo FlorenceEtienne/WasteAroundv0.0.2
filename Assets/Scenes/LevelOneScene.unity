@@ -1020,7 +1020,7 @@ MonoBehaviour:
   item1: []
   item2: []
   item3: []
-  respawnInterval: 5
+  respawnInterval: 4
   respawnTimer: 0
 --- !u!1 &772050011
 GameObject:
@@ -1654,7 +1654,7 @@ GameObject:
   - component: {fileID: 1211370068}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1766,7 +1766,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -5.5, z: 0}
-  m_LocalScale: {x: 6.3, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1993,8 +1993,8 @@ GameObject:
   - component: {fileID: 1600115579}
   - component: {fileID: 1600115578}
   - component: {fileID: 1600115581}
-  - component: {fileID: 1600115580}
   - component: {fileID: 1600115582}
+  - component: {fileID: 1600115580}
   m_Layer: 0
   m_Name: Wastepile
   m_TagString: Untagged
@@ -2063,8 +2063,8 @@ Transform:
   m_GameObject: {fileID: 1600115577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -9.5, z: 0}
-  m_LocalScale: {x: 6.3, y: 9, z: 1}
+  m_LocalPosition: {x: 0, y: -17.5, z: 0}
+  m_LocalScale: {x: 6.3, y: 18, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2081,7 +2081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4f61e88f6fb014987ead4be6a3d352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.5
+  moveEnemy: 0.5
 --- !u!61 &1600115581
 BoxCollider2D:
   m_ObjectHideFlags: 0

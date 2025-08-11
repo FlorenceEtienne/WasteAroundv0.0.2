@@ -30,11 +30,13 @@ public class LoadScenes : MonoBehaviour
     {
         // Load the scene named "LevelTwoScene", SceneManager will handle the loading process
         SceneManager.LoadScene("LevelTwoScene");
+        Time.timeScale = 1f;
     }
     public void LoadSceneThree()
     {
         // Load the scene named "LevelThreeScene", SceneManager will handle the loading process
         SceneManager.LoadScene("LevelThreeScene");
+        Time.timeScale = 1f;
     }
 
     public void LoadSceneWin()

@@ -52,27 +52,6 @@ public class LevelManagement : MonoBehaviour
         {
             respawnInterval = 1.5f; // Increase spawn rate
         }
-
-        // LevelTwoInfo levelTwoInfo = FindObjectOfType<LevelTwoInfo>();
-
-        // if (levelTwoInfo.MaterialsCollected > 14f)
-        // {
-        //     respawnInterval = 1.8f; // Increase spawn rate
-        // }
-        // if (levelTwoInfo.MaterialsCollected > 29f)
-        // {
-        //     respawnInterval = 1.2f; // Increase spawn rate
-        // }
-
-        // LevelThreeInfo levelThreeInfo = FindObjectOfType<LevelThreeInfo>();
-        // if (levelThreeInfo.MaterialsCollected > 14f)
-        // {
-        //     respawnInterval = 1.8f; // Increase spawn rate
-        // }
-        // if (levelThreeInfo.MaterialsCollected > 29f)
-        // {
-        //     respawnInterval = 1.2f; // Increase spawn rate
-        // }
     }
 
     private void RespawnObstacle(DestroyMode destroyMode)
@@ -97,8 +76,7 @@ public class LevelManagement : MonoBehaviour
         GameObject threeItem = GameObject.Instantiate(itemSpawn3, randPos3, transform.rotation);
         item3.Add(threeItem.GetComponent<Obstacle>());
         Debug.Log("Obstacle spawned: " + threeItem.name);
-        // Optionally, set the parent of the spawned item to this LevelManagement object
-        // oneItem.transform.SetParent(transform);
+
         if (destroyMode == DestroyMode.Timed)
         {
             Destroy(oneItem, 10f);
